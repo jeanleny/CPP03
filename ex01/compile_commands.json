@@ -1,0 +1,14 @@
+[
+{
+	"directory": "/home/lperis/Work/CommonCore/4th/CPP/CPP_03/ex01",
+	"arguments": ["c++", "-Wall", "-Werror", "-Wextra", "-std=c++98", "-MMD", "-MP", "-g", "-Iinclude", "-c", "src/main.cpp", "-o", "object/main.o"],
+	"file": "src/main.cpp",
+	"output": "object/main.o"
+},
+{
+	"directory": "/home/lperis/Work/CommonCore/4th/CPP/CPP_03/ex01",
+	"arguments": ["c++", "-Wall", "-Werror", "-Wextra", "-std=c++98", "-MMD", "-MP", "-g", "-Iinclude", "-c", "src/ClapTrap.cpp", "-o", "object/ClapTrap.o"],
+	"file": "src/ClapTrap.cpp",
+	"output": "object/ClapTrap.o"
+}
+]
