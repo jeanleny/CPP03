@@ -1,14 +1,18 @@
 #include <ClapTrap.hpp>
 
-ClapTrap::ClapTrap(std::string name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
+ClapTrap::ClapTrap() : _name("Default"), _hitPoints(10), _energyPoints(10), _attackDamage(0)
 {
 	std::cout << "Default constructor called" << std::endl;
 }
 
-ClapTrap::ClapTrap(ClapTrap const& obj)
+ClapTrap::ClapTrap(std::string name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
+{
+	std::cout << "Agument constructor called" << std::endl;
+}
+
+ClapTrap::ClapTrap(ClapTrap const& obj) : _name(obj._name), _hitPoints(obj._hitPoints), _energyPoints(obj._energyPoints), _attackDamage(obj._attackDamage)
 {
 	std::cout << "Copy constructor called" << std::endl;
-	this->_name = obj._name;
 }
 
 ClapTrap &ClapTrap::operator=(ClapTrap const &rhs)
@@ -34,17 +38,19 @@ std::string ClapTrap::getName()
 	return (_name);
 }
 
-unsigned int ClapTrap::getHitPoints()
+unsigned int ClapTrap::getHitPoints() const
 {
 	return (_hitPoints);
 }
 
-unsigned int ClapTrap::getEnergyPoints()
+unsigned int ClapTrap::getEnergyPoints() const
+
 {
 	return (_energyPoints);
 }
 
-unsigned int ClapTrap::getAttackDamage()
+unsigned int ClapTrap::getAttackDamage() const
+
 {
 	return (_attackDamage);
 }

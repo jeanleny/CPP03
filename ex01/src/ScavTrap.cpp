@@ -1,31 +1,40 @@
 #include <ScavTrap.hpp>
 
+ScavTrap::ScavTrap() : ClapTrap("ScavTrap default")
+{
+	std::cout << "ScavTrap default constructor called" << std::endl;
+	_attackDamage = 20;
+	_energyPoints = 50;
+	_hitPoints = 100;
+}
 
 ScavTrap::~ScavTrap()
 {
 	std::cout << "ScavTrap destructor called" << std::endl;
 }
 
-ScavTrap::ScavTrap(std::string name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
+ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
-	std::cout << "Default constructor called" << std::endl;
+	std::cout << "Scav Trap argument constructor called" << std::endl;
+	_attackDamage = 20;
+	_energyPoints = 50;
+	_hitPoints = 100;
 }
 
-ScavTrap::ScavTrap(ScavTrap const& obj)
+ScavTrap::ScavTrap(ScavTrap const& obj): ClapTrap(obj)
 {
-	std::cout << "Copy constructor called" << std::endl;
-	this->_name = obj._name;
+	std::cout << "ScavTrap copy constructor called" << std::endl;
 }
 
 ScavTrap &ScavTrap::operator=(ScavTrap const &rhs)
 {
-	std::cout << "Assignement operator called" << std::endl;
+	std::cout << "ScavTrap Assignement operator called" << std::endl;
 	if (this != &rhs)
-	{
-		this->ClapTrap::getName() = rhs.ClapTrap::getName();
-		this->_hitPoints = rhs._hitPoints;
-		this->_attackDamage = rhs._attackDamage;
-		this->_energyPoints = rhs._energyPoints;
-	}
+		ClapTrap::operator=(rhs);
 	return (*this);
+}
+
+void	ScavTrap::guardGate()
+{
+	std::cout << _name << " is in guard mode" << std::endl;
 }

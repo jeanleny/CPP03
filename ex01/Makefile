@@ -9,6 +9,8 @@ BUILD_DIR	= object
 NAME		= scavtrap
 SRC			+= src/main.cpp			\
 			   src/ClapTrap.cpp		\
+			   src/ScavTrap.cpp		\
+			   src/FragTrap.cpp
 
 OBJ			= ${SRC:$(SRC_DIR)/%.cpp=$(BUILD_DIR)/%.o}
 DEP			= $(OBJ:.o=.d)
