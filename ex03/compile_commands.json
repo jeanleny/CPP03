@@ -1,0 +1,32 @@
+[
+{
+	"directory": "/home/lperis/Work/CommonCore/4th/CPP/CPP_03/ex03",
+	"arguments": ["c++", "-Wall", "-Werror", "-Wextra", "-std=c++98", "-MMD", "-MP", "-g", "-Iinclude", "-c", "src/main.cpp", "-o", "object/main.o"],
+	"file": "src/main.cpp",
+	"output": "object/main.o"
+},
+{
+	"directory": "/home/lperis/Work/CommonCore/4th/CPP/CPP_03/ex03",
+	"arguments": ["c++", "-Wall", "-Werror", "-Wextra", "-std=c++98", "-MMD", "-MP", "-g", "-Iinclude", "-c", "src/ClapTrap.cpp", "-o", "object/ClapTrap.o"],
+	"file": "src/ClapTrap.cpp",
+	"output": "object/ClapTrap.o"
+},
+{
+	"directory": "/home/lperis/Work/CommonCore/4th/CPP/CPP_03/ex03",
+	"arguments": ["c++", "-Wall", "-Werror", "-Wextra", "-std=c++98", "-MMD", "-MP", "-g", "-Iinclude", "-c", "src/ScavTrap.cpp", "-o", "object/ScavTrap.o"],
+	"file": "src/ScavTrap.cpp",
+	"output": "object/ScavTrap.o"
+},
+{
+	"directory": "/home/lperis/Work/CommonCore/4th/CPP/CPP_03/ex03",
+	"arguments": ["c++", "-Wall", "-Werror", "-Wextra", "-std=c++98", "-MMD", "-MP", "-g", "-Iinclude", "-c", "src/FragTrap.cpp", "-o", "object/FragTrap.o"],
+	"file": "src/FragTrap.cpp",
+	"output": "object/FragTrap.o"
+},
+{
+	"directory": "/home/lperis/Work/CommonCore/4th/CPP/CPP_03/ex03",
+	"arguments": ["c++", "-Wall", "-Werror", "-Wextra", "-std=c++98", "-MMD", "-MP", "-g", "-Iinclude", "-c", "src/DiamondTrap.cpp", "-o", "object/DiamondTrap.o"],
+	"file": "src/DiamondTrap.cpp",
+	"output": "object/DiamondTrap.o"
+}
+]
