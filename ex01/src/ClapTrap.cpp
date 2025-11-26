@@ -7,7 +7,7 @@ ClapTrap::ClapTrap() : _name("Default"), _hitPoints(10), _energyPoints(10), _att
 
 ClapTrap::ClapTrap(std::string name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
 {
-	std::cout << "Agument constructor called" << std::endl;
+	std::cout << "Argument constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(ClapTrap const& obj) : _name(obj._name), _hitPoints(obj._hitPoints), _energyPoints(obj._energyPoints), _attackDamage(obj._attackDamage)
