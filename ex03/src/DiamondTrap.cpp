@@ -4,7 +4,7 @@ DiamondTrap::DiamondTrap() : _name("Diamond default name")
 {
 	std::cout << "DiamondTrap default constructor called" << std::endl;
 	_hitPoints = FragTrap::_hitPoints;
-	_energyPoints = ScavTrap::_energyPoints;
+	setEnergyPoints(scavEnergyPoints);
 	_attackDamage = FragTrap::_attackDamage;
 }
 
@@ -12,8 +12,8 @@ DiamondTrap::DiamondTrap(std::string name) : _name(name)
 {
 	std::cout << "DiamondTrap argument constructor called" << std::endl;
 	ClapTrap::_name = name + "_clap_name";
+	setEnergyPoints(scavEnergyPoints);
 	_hitPoints = FragTrap::_hitPoints;
-	_energyPoints = ScavTrap::_energyPoints;
 	_attackDamage = FragTrap::_attackDamage;
 }
 
@@ -22,7 +22,7 @@ DiamondTrap::DiamondTrap(DiamondTrap const& obj)
 	std::cout << "DiamondTrap copy constructor called" << std::endl;
 	ClapTrap::_name = obj._name + "_clap_name";
 	_hitPoints = obj.FragTrap::_hitPoints;
-	_energyPoints = obj.ScavTrap::_energyPoints;
+	setEnergyPoints(scavEnergyPoints);
 	_attackDamage = obj.FragTrap::_attackDamage;
 }
 

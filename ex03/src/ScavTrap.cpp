@@ -1,11 +1,13 @@
 #include <ScavTrap.hpp>
 
+
 ScavTrap::ScavTrap() : ClapTrap("ScavTrap default")
 {
 	std::cout << "ScavTrap default constructor called" << std::endl;
 	_attackDamage = 20;
 	_energyPoints = 50;
 	_hitPoints = 100;
+	scavEnergyPoints = _energyPoints;
 }
 
 ScavTrap::~ScavTrap()
@@ -19,11 +21,13 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 	_attackDamage = 20;
 	_energyPoints = 50;
 	_hitPoints = 100;
+	scavEnergyPoints = _energyPoints;
 }
 
 ScavTrap::ScavTrap(ScavTrap const& obj): ClapTrap(obj)
 {
 	std::cout << "ScavTrap copy constructor called" << std::endl;
+	scavEnergyPoints = _energyPoints;
 }
 
 ScavTrap &ScavTrap::operator=(ScavTrap const &rhs)
